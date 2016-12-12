@@ -9,7 +9,7 @@
     function usertag($variable) {
 
         $pattern = '/@((\@\;(.+?)\@\;)|(.[^ ]+))\s{0,}/';
-        $variable = preg_replace($desen, '<a href="/$1">$0</a>', $variable);
+        $variable = preg_replace($pattern, '<a href="/$1">$0</a>', $variable);
 
         echo $variable;
 
